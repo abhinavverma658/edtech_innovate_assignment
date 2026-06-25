@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub | Course Detail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/courses.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-bar">
+            <a href="index.html" class="brand" aria-label="LearnHub home">
+                <img src="assests/updated-logo.webp" alt="LearnHub logo" class="brand-logo">
+            </a>
+            <button id="mobile-menu-button" class="menu-button" type="button" aria-controls="mobile-menu"
+                aria-expanded="false">
+                <span class="sr-only">Toggle menu</span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="desktop-nav" aria-label="Primary navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="course-detail.html?id=react-fundamentals" class="nav-link is-current">Course Detail</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="mobile-nav hidden" aria-label="Mobile navigation">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="courses.html" class="nav-link">Courses</a>
+            <a href="course-detail.html?id=react-fundamentals" class="nav-link is-current">Course Detail</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero compact-hero">
+            <div class="container">
+                <span class="eyebrow">Course detail</span>
+                <h1>Course details load from the URL.</h1>
+            </div>
+        </section>
+
+        <section class="section-block">
+            <div class="container" id="course-detail"></div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <img src="assests/updated-logo.webp" alt="LearnHub logo" class="footer-logo">
+                <h3>About Us</h3>
+                <p>LearnHub offers simple online courses for development, design, and marketing.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="course-detail.html?id=react-fundamentals">Course Detail</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p>Email: info@learnhub.com</p>
+                <p>Phone: +1 555 123 4567</p>
+                <p>Address: Online learning platform</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

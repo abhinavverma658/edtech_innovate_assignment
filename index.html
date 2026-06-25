@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnHub | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/courses.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container nav-bar">
+            <a href="index.html" class="brand" aria-label="LearnHub home">
+                <img src="assests/updated-logo.webp" alt="LearnHub logo" class="brand-logo">
+            </a>
+            <button id="mobile-menu-button" class="menu-button" type="button" aria-controls="mobile-menu"
+                aria-expanded="false">
+                <span class="sr-only">Toggle menu</span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="desktop-nav" aria-label="Primary navigation">
+                <a href="index.html" class="nav-link is-current">Home</a>
+                <a href="courses.html" class="nav-link">Courses</a>
+                <a href="course-detail.html?id=react-fundamentals" class="nav-link">Course Detail</a>
+            </nav>
+        </div>
+        <div id="mobile-menu" class="mobile-nav hidden" aria-label="Mobile navigation">
+            <a href="index.html" class="nav-link is-current">Home</a>
+            <a href="courses.html" class="nav-link">Courses</a>
+            <a href="course-detail.html?id=react-fundamentals" class="nav-link">Course Detail</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <span class="eyebrow">Online learning</span>
+                    <h1>Learn practical skills with simple, focused courses.</h1>
+                    <p>Browse development, design, and marketing courses with a straightforward layout and quick access
+                        to the details.</p>
+                    <div class="hero-actions">
+                        <a href="courses.html" class="button button-primary">Browse Courses</a>
+                        <a href="#featured-courses" class="button button-secondary">Popular Courses</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-block" id="featured-courses">
+            <div class="container section-heading">
+                <div>
+                    <span class="eyebrow">Popular courses</span>
+                    <h2>Browse featured learning paths</h2>
+                </div>
+                <p>Each course card links to a dedicated detail page powered by the shared mock data.</p>
+            </div>
+            <div class="container">
+                <div id="featured-courses-grid" class="course-grid"></div>
+            </div>
+        </section>
+
+        <section class="section-block testimonials-section">
+            <div class="container section-heading centered">
+                <div>
+                    <span class="eyebrow">Student feedback</span>
+                    <h2>What learners are saying</h2>
+                </div>
+            </div>
+            <div class="container testimonial-grid">
+                <article class="testimonial-card">
+                    <p>“The course structure is practical and the pacing made it easy to stay consistent.”</p>
+                    <strong>Jordan Lee</strong>
+                    <span>Web development student</span>
+                </article>
+                <article class="testimonial-card">
+                    <p>“I found the design lessons clear and immediately useful for my day-to-day work.”</p>
+                    <strong>Priya Shah</strong>
+                    <span>Product designer</span>
+                </article>
+                <article class="testimonial-card">
+                    <p>“The marketing material is focused, actionable, and easy to apply to live campaigns.”</p>
+                    <strong>Chris Walker</strong>
+                    <span>Growth marketer</span>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <img src="assests/updated-logo.webp" alt="LearnHub logo" class="footer-logo">
+                <h3>About Us</h3>
+                <p>LearnHub offers simple online courses for development, design, and marketing.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="courses.html">Courses</a>
+                <a href="course-detail.html?id=react-fundamentals">Course Detail</a>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <p>Email: info@learnhub.com</p>
+                <p>Phone: +1 555 123 4567</p>
+                <p>Address: Online learning platform</p>
+            </div>
+            <div class="footer-col">© 2026. Edtech Innovate Pvt. Ltd.</div>
+        </div>
+    </footer>
+</body>
+
+</html>
